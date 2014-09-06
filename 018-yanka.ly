@@ -11,9 +11,7 @@
 	    \relative c'{
 	        fis16-2^\markup "Живо"( g a8-4) a-.-3 a-. | g16-2( a b8-4) b4-3 |
 	        a8-.-1[ cis-.-2 e-.-4 cis-.] | d-.-1[ e-. fis-.-3 d-.-1]
-	    }
-	    \relative c'{
-	        fis16-2( g a8-4) a-.-3 a-. | g16-2( a b8-4) b4-3 |
+	        fis,16-2( g a8-4) a-.-3 a-. | g16-2( a b8-4) b4-3 |
 	        a8-.-1[ cis-.-2 e-.-4 cis-.] | d-.-1 fis-.-3 d4-1 \bar "||"
 	    }
 	}
@@ -23,8 +21,6 @@
         \set fingeringOrientations = #'(down)
 	    \relative c{
 	        <d-.-5>8 r d-. r | <g-2>2 | <a-.-1>8 r a-. r | d,2-5
-	    }
-	    \relative c{
 	        <d-.-5>8 r d-. r | <g-2>2 | <a-.-1>8 r a-. r | d,2-5 \bar "||"
 	    }
 	}
