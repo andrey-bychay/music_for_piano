@@ -45,7 +45,7 @@ andantino = \markup{
             <<{ \set fingeringOrientations = #'(up down)
                 \override Fingering.staff-padding = #'()
                 <bes-3 d-1>4( <c-2 ees-1> |
-                \set fingeringOrientations = #'(up)
+                \set fingeringOrientations = #'(up down)
                 <bes-3 d-1> <a-4 c-2 d-1>) |
                 <bes d>( <c ees> |
                 <bes d> <a c d>) |
