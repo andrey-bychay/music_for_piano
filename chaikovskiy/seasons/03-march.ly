@@ -16,3 +16,17 @@
     }
 }
 
+\new PianoStaff <<
+    \new Staff {
+        \key g \minor
+        \time 2/4
+        \relative c'{
+            r2 | r |
+            r8 g16-. g32( a g) fis8.( a16) |
+        }
+    }
+    \new Staff {
+        \clef "bass"
+        \key g \minor
+    }
+}
