@@ -36,16 +36,20 @@ andantino = \markup{
                 \oneVoice
                 r2 ^\andantino \p | % 1
                 r | % 2
-                \set fingeringOrientations = #'(down)
-                r8
-                    \voiceOne
-                    g16-.\fingBC \tuplet 3/2 {<g>32( <a-4> <g-3>)} fis8.-2[( a16-4)] | % 3
-                g-1( \< bes-2 d-1 fis-3) \! g8.->-5( fis16-4 | % 4
-                d8-2) <g,, bes d> r <a c d> | % 5
+                r8 \voiceOne
+                    g16_.\fingBC \tuplet 3/2 {<g>32_( <a_4> <g_3>)} fis8.-2_( a16-4) | % 3
+                \stemDown
+                    g-1( \< bes-2 d-1 fis-3) \! g8.->-5( fis16-4 | % 4
+                \stemUp
+                    d8-2) <g,, bes d> \oneVoice
+                    r <a c d> | % 5
                 r <bes d> r <a c d> | % 6
-                r g'16-. \tuplet 3/2 { g32( a g) } fis8.( a16) | % 7
-                g( bes d fis) g8.->-5( f16-3) | % 8
-                f8-9( ees) d-3( c-2) | % 9
+                r \voiceOne
+                    g'16-. \tuplet 3/2 { g32( a g) } fis8.( a16) | % 7
+                g( bes d fis) \stemDown
+                    g8.->-5( f16-3) | % 8
+                \stemUp
+                    f8-9( ees) d-3( c-2) | % 9
                 c16-.-3( fis,-.-2 g-.-3 a-.-4) b8.->-5( a16-4) | % 10
             }
         }
@@ -55,8 +59,8 @@ andantino = \markup{
                 s2 | s | s | s | s | s | % 1-6
                 s4 s4 \< | % 7
                 s4. s8 \! | % 8
-                r8 <g c> r g | % 9
-                r4 \> <c fis> \! | % 10
+                r8 <g' c> r g | % 9
+                r4 \> <fis c> \! | % 10
             }
         }
     >>
@@ -64,25 +68,19 @@ andantino = \markup{
         \clef "bass"
         \key g \minor
         \new Voice {
-            \voiceOneStyle
             \voiceOne
+            \voiceOneStyle
             \relative c' {
-                \set fingeringOrientations = #'(up down)
                 \override Fingering.staff-padding = #'()
-                    <bes-3 d-1>4( <c-2 ees-1> | % 1
-                \set fingeringOrientations = #'(up)
-                <bes-3 d-1>
-                    \set fingeringOrientations = #'(up down)
-                    <a-4 c-2 d-1>) | % 2
+                <bes-3 d-1>4( <c-2 ees-1> | % 1
+                <bes^3 d-1> <a-4 c-2 d-1>) | % 2
                 <bes d>( <c ees> | % 3
                 <bes d> <a c d>) | % 4
-                <bes d>8 s
-                %\set fingeringOrientations = #'(down)
-                    <fis,-3>8.( a16) | % 5
-                g16-5( \< bes-3 d-1 fis-2) \! s4 | % 6
+                <bes d>8 s <fis,-3>8._( a16) | % 5
+                g16-5_( \< bes-3 d-1 fis-2) \! s4 | % 6
                 r8 <g bes d> r <fis a d> | % 7
                 r8 <g bes d> r <g b d> | % 8
-                r16 fis-3( g-2 c-1) f8.-1->( ees16-2) | % 9
+                r16 fis_3( g_2 c_1) f8._1->( ees16_2) | % 9
                 <g, bes d>4 r8 d' | % 10
             }
         }
@@ -93,9 +91,9 @@ andantino = \markup{
                 g g4 g8 | % 2
                 r g4 g8~ | % 3
                 g g4 g8~ | % 4
-                \set fingeringOrientations = #'(up)
-                g8 g,16-. \tuplet 3/2 {g32-2( a g)} s4 | % 5
-                s4 g'8.->-1( fis16-2) | % 6
+                \override Fingering.staff-padding = #'()
+                g8 g,16^. \tuplet 3/2 {g32^2^( a g)} s4 | % 5
+                s4 g'8.^>-1^( fis16-2) | % 6
                 d4-5( c-5 | % 7
                 bes8-5) r b r | % 8
                 c r r <g' c> | % 9
