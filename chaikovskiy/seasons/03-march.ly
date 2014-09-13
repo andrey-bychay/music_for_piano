@@ -17,8 +17,8 @@
     }
 }
 
-fingBC = \finger \markup \tied-lyric #"2~3"
-%fingersBC = \filger \markup { 2 3 }
+%fingBC = \finger \markup \tied-lyric #"2~3"
+fingBC = \finger \markup { \concat {2(3)} }
 andantino = \markup{
                 \column {
                     \line{Неторопливо, выразительно}
@@ -40,7 +40,7 @@ andantino = \markup{
                 r2 ^\andantino | % 1
                 r | % 2
                 r8 \voiceOne
-                    g16_.\fingBC \tuplet 3/2 {<g>32_( <a_4> <g_3>)} fis8.-2_( a16-4) | % 3
+                    g16_._\fingBC \tuplet 3/2 {<g>32_\fingBC_( <a_4> <g_3>)} fis8.-2_( a16-4) | % 3
                 \stemDown
                     g-1( \< bes-2 d-1 fis-3) \! g8.->-5( fis16-4 | % 4
                 \stemUp
