@@ -18,6 +18,7 @@
 }
 
 fingBC = \finger \markup \tied-lyric #"2~3"
+%fingersBC = \filger \markup { 2 3 }
 andantino = \markup{
                 \column {
                     \line{Неторопливо, выразительно}
@@ -35,6 +36,7 @@ andantino = \markup{
             \relative c''{
                 \oneVoice
                 \override Fingering.font-size = #-7
+                \override TupletBracket.bracket-visibility = #'if-no-beam
                 r2 ^\andantino | % 1
                 r | % 2
                 r8 \voiceOne
@@ -88,6 +90,7 @@ andantino = \markup{
         \new Voice {
             \voiceTwo
             \override Fingering.font-size = #-7
+            \override TupletBracket.bracket-visibility = #'if-no-beam
             \relative c' {
                 r8 g4-5 g8-5~ | % 1
                 g g4 g8 | % 2
