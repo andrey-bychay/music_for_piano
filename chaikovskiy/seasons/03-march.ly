@@ -57,9 +57,7 @@ andantino = \markup{
         \new Voice {
             \voiceTwo
             \relative c'{
-                s2 | s | s | s | s | s | % 1-6
-                s4 s4 \< | % 7
-                s4. s8 \! | % 8
+                s2 | s | s | s | s | s | s | s | % 1-8
                 r8 <g' c> r g | % 9
                 r4 \> <fis c> \! | % 10
             }
@@ -72,6 +70,7 @@ andantino = \markup{
             \voiceOne
             \voiceOneStyle
             \override Fingering.font-size = #-7
+            \dynamicUp
             \relative c' {
                 \override Fingering.staff-padding = #'()
                 <bes-3 d-1>4( <c-2 ees-1> | % 1
@@ -80,8 +79,8 @@ andantino = \markup{
                 <bes d> <a c d>) | % 4
                 <bes d>8 s <fis,-3>8._( a16) | % 5
                 g16-5_( \< bes-3 d-1 fis-2) \! s4 | % 6
-                r8 <g bes d> r <fis a d> | % 7
-                r8 <g bes d> r <g b d> | % 8
+                r8 <g bes d> r \< <fis a d> | % 7
+                r8 <g bes d> r <g b d> \! | % 8
                 r16 fis_3( g_2 c_1) f8.^1-> ( ees16^2) | % 9
                 <g, bes d>4 r8 d' | % 10
             }
