@@ -35,7 +35,7 @@ andantino = \markup{
             \relative c''{
                 \oneVoice
                 \override Fingering.font-size = #-7
-                r2 ^\andantino \p | % 1
+                r2 ^\andantino | % 1
                 r | % 2
                 r8 \voiceOne
                     g16_.\fingBC \tuplet 3/2 {<g>32_( <a_4> <g_3>)} fis8.-2_( a16-4) | % 3
@@ -73,7 +73,7 @@ andantino = \markup{
             \dynamicUp
             \relative c' {
                 \override Fingering.staff-padding = #'()
-                <bes-3 d-1>4( <c-2 ees-1> | % 1
+                <bes-3 d-1>4( \p <c-2 ees-1> | % 1
                 <bes^3 d-1> <a-4 c-2 d-1>) | % 2
                 <bes d>( <c ees> | % 3
                 <bes d> <a c d>) | % 4
