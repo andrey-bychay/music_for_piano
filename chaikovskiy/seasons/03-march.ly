@@ -218,8 +218,25 @@ andantino = \markup{
                 % ----- 10
                 r d~d4 |
                 % ----- 11
-                s4 r8 bes'8-5 |
+                s4 r8 bes'8-5 ~ |
                 % ----- 12
+                bes bes4-5 bes8-5 ~ |
+                % ----- 13
+                bes bes4 bes8 ~ |
+                % ----- 14
+                bes bes4 bes8 ~ |
+                % ----- 15
+                bes bes4 bes8 ~ |
+                % ----- 16
+                bes bes4 bes8 ~ |
+                % ----- 17
+                bes bes4-5 bes8-5 ~ |
+                % ----- 18
+                bes bes r bes, ~ |
+                % ----- 19
+                bes bes4 bes8 ~ |
+                % ----- 20
+                bes
             }
         }
     >>
