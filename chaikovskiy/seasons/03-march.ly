@@ -118,6 +118,25 @@ andantino = \markup{
                 \acciaccatura d8-5 a16-3 g8-2_( d16-1)
                     \grace {d16_( ees} d8.)_( a16) |
                 % ----- 20
+                bes_. cis_. d_. ees_. f_. fis_. bes_. a_. |
+                % ----- 21
+                \acciaccatura a8
+                    \stemDown c8.( bes16)
+                    \stemUp
+                    \acciaccatura bes8
+                    \stemDown d16-. a-.
+                    \stemUp
+                    \acciaccatura bes8
+                    \stemDown d16-. a-. |
+                % ----- 22
+                \stemUp
+                    \acciaccatura a8 d16 d,8( g16)
+                    \acciaccatura d8-3 g16-5 cis,_.-2
+                    \acciaccatura d8 g16_. cis,_. |
+                % ----- 23
+                \acciaccatura d8 g8.-5( fis16-4) r
+                    \tuplet 3/2 {d32_2_([ ees_4 d_3)]} cis16.-2_( d32-1) |
+                % ----- 24
             }
         }
         \new Voice {
