@@ -17,11 +17,12 @@
     }
 }
 
-%fingBC = \finger \markup \tied-lyric #"2~3"
 fingBC = \finger \markup { \concat {2(3)} }
 fingCB = \finger \markup { \concat {3(2)} }
 fingDE = \finger \markup { \concat {4(5)} }
 fingED = \finger \markup { \concat {5(4)} }
+fingAE = \finger \markup \tied-lyric #"1~5"
+
 andantino = \markup{
                 \column {
                     \line{Неторопливо, выразительно}
@@ -143,8 +144,34 @@ andantino = \markup{
                 \oneVoice
                     r
                     \tuplet 3/2 { d32_2 _( [ ees_4 d_3 ) ] }
-                    cis16.-2 _( d32-1 ) |
+                    cis16.-2 _( d32-1 ) | \break
                 % ----- 24
+                    fis32-.-2 gis-.-3 a-.-1 cis-.-3 d8-4 r16 g!32-. \fingBC \<
+                    \tuplet 3/2 { g64 \fingCB ( a-4 g-3 ) }
+                    fis16.-2 ( g32-1 ) \! |
+                % ----- 25
+                    c16-5 \> d,8 \fingAE ( d,16 ) \! r
+                    \tuplet 3/2 { d32 [ ( ees d ) ] }
+                    cis16. ( d32 ) |
+                % ----- 26
+                    fis32-. gis-. a-. cis-. d8 r16 g!32-. \< [
+                    \tuplet 3/2 { g64 ( a g ) ] }
+                    fis16. ( g32 ) \! | \break
+                % ----- 27
+                    c16-5 \> d,8 ( d,16 ) \! r g32-.
+                    \tuplet 3/2 { g64 ( a g ) }
+                    fis16. ( g32 ) |
+                % ----- 28
+                    c'16-5 d,8 ( d,16 ) r cis'8 ( cis,16 ) |
+                % ----- 29
+                    r d'8 \> ( d,16 ) r cis'8 ( cis,16 ) |
+                % ----- 30
+                    r d'8 ( d,16 ) r d'8 ( d,16 ) \! |
+                % ----- 31
+                    r8 g16-.
+                    \tuplet 3/2 { g32 ( a g ) }
+                    fis8. ( a16 ) | \break
+                % ----- 32
             }
         }
         \new Voice {
@@ -220,6 +247,14 @@ andantino = \markup{
                 % ----- 19
                     <d g bes> <ees ges> |
                 % ----- 20
+                    <d f> <c ees> |
+                % ----- 21
+                    <d f> <d fis c'> |
+                % ----- 22
+                    <d g bes> <e a> |
+                % ----- 23
+                    d <g-3 bes-2> \p |
+                % ----- 24
             }
         }
         \new Voice {
@@ -270,7 +305,13 @@ andantino = \markup{
                 % ----- 19
                     bes bes4 bes8 ~ |
                 % ----- 20
-                    bes
+                    bes bes4 bes8 ~ |
+                % ----- 21
+                    bes bes4 bes8 ~ |
+                % ----- 22
+                    bes bes r a |
+                % ----- 23
+                    r d, r d' |
             }
         }
     >>
