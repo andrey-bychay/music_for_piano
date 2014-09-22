@@ -17,19 +17,6 @@
     }
 }
 
-fingBC = \finger \markup { \concat {2(3)} }
-fingCB = \finger \markup { \concat {3(2)} }
-fingDE = \finger \markup { \concat {4(5)} }
-fingED = \finger \markup { \concat {5(4)} }
-fingAE = \finger \markup \tied-lyric #"1~5"
-
-andantino = \markup{
-                \column {
-                    \line { Неторопливо, выразительно }
-                    \line { Andantino espressivo }
-                }
-            }
-
 \new PianoStaff <<
     \new Staff <<
         \clef "treble"
@@ -43,13 +30,25 @@ andantino = \markup{
                 \override Fingering.font-size = #-7
                 \override TupletBracket.bracket-visibility = #'if-no-beam
                 \override Fingering.staff-padding = #'()
-                    r2 ^\andantino |
+                    r2
+                    ^\markup {
+                        \column {
+                            \bold {
+                                \line { Неторопливо, выразительно }
+                                \line { Andantino espressivo }
+                            }
+                        }
+                    } |
                 % --- 2
                     r |
                 % --- 3
                     r8
-                    g16_. _\fingBC
-                    \tuplet 3/2 { <g>32 _\fingCB _( <a_4> <g_3> ) }
+                    g16_.
+                    _\finger \markup { \concat { 2(3) } }
+                    \tuplet 3/2 {
+                        <g>32
+                        _\finger \markup { \concat { 3(2) } }
+                        _( <a_4> <g_3> ) }
                     fis8.-2 _( a16-4 ) |
                 % --- 4
                     g-1 ( \< bes-2 d-1 fis-3 ) \! g8.->-5 ( fis16-4 |
@@ -69,11 +68,15 @@ andantino = \markup{
                 \voiceOne
                     f8-5 ( ees ) d-3( c-2 ) |
                 % --- 10
-                    c16-.-3 ( fis,-.-2 g-.-3 a-.-4 ) bes8.->-5 ( a16 _\fingDE | 
+                    c16-.-3 ( fis,-.-2 g-.-3 a-.-4 ) bes8.->-5 ( a16
+                        _\finger \markup { \concat { 4(5) } }
+                        | 
                 % --- 11
                 \autoBeamOff
-                    g8 \fingED )
-                    ^\markup { \bold { un pockettino più mosso } }
+                    g8
+                    \finger \markup { \concat { 5(4) } }
+                    )
+                    ^\markup { \bold { un pochettino più mosso } }
                 \oneVoice
                     d'
                     _\markup { \bold { \italic { poco più } } \dynamic f }
@@ -142,11 +145,17 @@ andantino = \markup{
                     \tuplet 3/2 { d32_2 _( [ ees_4 d_3 ) ] }
                     cis16.-2 _( d32-1 ) | \break
                 % --- 24
-                    fis32-.-2 gis-.-3 a-.-1 cis-.-3 d8-4 r16 g!32-. \fingBC \<
-                    \tuplet 3/2 { g64 \fingCB ( a-4 g-3 ) }
+                    fis32-.-2 gis-.-3 a-.-1 cis-.-3 d8-4 r16 g!32-.
+                        \finger \markup { \concat { 2(3) } }
+                        \<
+                    \tuplet 3/2 { g64
+                        \finger \markup { \concat { 3(2) } }
+                        ( a-4 g-3 ) }
                     fis16.-2 ( g32-1 ) \! |
                 % --- 25
-                    d'16-5 \> d,8 \fingAE ( d,16 ) \! r
+                    d'16-5 \> d,8
+                        \finger \markup \tied-lyric #"1~5"
+                        ( d,16 ) \! r
                     \tuplet 3/2 { d32 [ ( ees d ) ] }
                     cis16. ( d32 ) |
                 % --- 26
