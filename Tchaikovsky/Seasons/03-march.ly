@@ -150,7 +150,7 @@ andantino = \markup{
                     \tuplet 3/2 { g64 \fingCB ( a-4 g-3 ) }
                     fis16.-2 ( g32-1 ) \! |
                 % ----- 25
-                    c16-5 \> d,8 \fingAE ( d,16 ) \! r
+                    d'16-5 \> d,8 \fingAE ( d,16 ) \! r
                     \tuplet 3/2 { d32 [ ( ees d ) ] }
                     cis16. ( d32 ) |
                 % ----- 26
@@ -158,11 +158,11 @@ andantino = \markup{
                     \tuplet 3/2 { g64 ( a g ) ] }
                     fis16. ( g32 ) \! | \break
                 % ----- 27
-                    c16-5 \> d,8 ( d,16 ) \! r g32-.
+                    d'16-5 \> d,8 ( d,16 ) \! r g32-.
                     \tuplet 3/2 { g64 ( a g ) }
                     fis16. ( g32 ) |
                 % ----- 28
-                    c'16-5 d,8 ( d,16 ) r cis'8 ( cis,16 ) |
+                    d''16-5 d,8 ( d,16 ) r cis'8 ( cis,16 ) |
                 % ----- 29
                     r d'8 \> ( d,16 ) r cis'8 ( cis,16 ) |
                 % ----- 30
@@ -255,6 +255,23 @@ andantino = \markup{
                 % ----- 23
                     d <g-3 bes-2> \p |
                 % ----- 24
+                    <a-2 c!-1> <bes-2 d-1> |
+                % --- 25
+                    <a-2 c-1> <g-2 bes-1> |
+                % --- 26
+                    <a c!> <bes d> |
+                % --- 27
+                    <a c> <bes d> |
+                % --- 28
+                    <a c> <g bes>
+                    %\markup{ bold{ italic {dim.} } } |
+                % --- 29
+                    <fis-3 a-1> <g-2 bes-1> |
+                % --- 30
+                    <fis a> <fis a> |
+                % --- 31
+                    <bes d> \p <c ees> |
+                % --- 32
             }
         }
         \new Voice {
@@ -312,6 +329,22 @@ andantino = \markup{
                     bes bes r a |
                 % ----- 23
                     r d, r d' |
+                % --- 24
+                    r d r d |
+                % --- 25
+                    r d r d |
+                % --- 26
+                    r d r d |
+                % --- 27
+                    r d r d |
+                % --- 28
+                    r d r d |
+                % --- 29
+                    r d r d |
+                % --- 30
+                    r d r d |
+                % --- 31
+                    r g4 g8 |
             }
         }
     >>
