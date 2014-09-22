@@ -48,30 +48,25 @@ andantino = \markup{
                     r |
                 % ----- 3
                     r8
-                \voiceOne
                     g16_. _\fingBC
                     \tuplet 3/2 { <g>32 _\fingCB _( <a_4> <g_3> ) }
                     fis8.-2 _( a16-4 ) |
                 % ----- 4
-                \stemDown
                     g-1 ( \< bes-2 d-1 fis-3 ) \! g8.->-5 ( fis16-4 |
                 % ----- 5
-                \stemUp
                     d8-2 ) <g,, bes d>
-                \oneVoice
                     r <a c d> | 
                 % ----- 6
                     r <bes d> r <a c d> |
                 % ----- 7
                     r
-                \voiceOne g'16_.
+                    g'16_.
                     \tuplet 3/2 { g32 _( a g ) }
                     fis8. _( a16 ) |
                 % ----- 8
-                \stemDown
                     g ( bes d fis ) g8.->-5 ( f16-3 ) |
                 % ----- 9
-                \stemUp
+                \voiceOne
                     f8-5 ( ees ) d-3( c-2 ) |
                 % ----- 10
                     c16-.-3 ( fis,-.-2 g-.-3 a-.-4 ) bes8.->-5 ( a16 _\fingDE | 
@@ -79,8 +74,8 @@ andantino = \markup{
                 \autoBeamOff
                     g8 \fingED )
                 \oneVoice
-                \stemNeutral
-                    d' _\markup { \bold { \italic {poco più} } \dynamic f }
+                    d'
+                    _\markup { \bold { \italic { poco più } } \dynamic f }
                 \autoBeamOn
                     \grace { d16-2 _( ees-3 }
                     d8.-2 )( a16-1 ) |
@@ -164,11 +159,15 @@ andantino = \markup{
                 % ----- 28
                     d''16-5 d,8 ( d,16 ) r cis'8 ( cis,16 ) |
                 % ----- 29
-                    r d'8 \> ( d,16 ) r cis'8 ( cis,16 ) |
+                    r
+                    ^\markup { \bold { poco ritenuto } }
+                    d'8 \> ( d,16 ) r cis'8 ( cis,16 ) |
                 % ----- 30
                     r d'8 ( d,16 ) r d'8 ( d,16 ) \! |
                 % ----- 31
-                    r8 g16-.
+                    r8
+                    ^\markup { \bold { a tempo } }
+                    g16-.
                     \tuplet 3/2 { g32 ( a g ) }
                     fis8. ( a16 ) | \break
                 % ----- 32
@@ -264,7 +263,7 @@ andantino = \markup{
                     <a c> <bes d> |
                 % --- 28
                     <a c> <g bes>
-                    %\markup{ bold{ italic {dim.} } } |
+                    ^\markup { \bold { \italic { dim. } } } |
                 % --- 29
                     <fis-3 a-1> <g-2 bes-1> |
                 % --- 30
