@@ -265,10 +265,13 @@
                 % --- 4
                     <bes d> <a c d> ) |
                 % --- 5
-                    <bes d>8 s <fis,-3>8. _( a16 ) |
+                    <bes d>8 s
+                \oneVoice
+                    <fis,-3>8. ( a16 ) |
                 % --- 6
-                    g16-5 _( \< bes-3 d-1 fis-2 ) \! s4 |
+                    g16-5 ( \< bes-3 d-1 fis-2 ) \! g8.-1-> ( fis16-2 ) |
                 % --- 7
+                \voiceOne
                     r8 <g bes d> r \< <fis a d> |
                 % --- 8
                     r8 <g bes d> r <g b d> \! |
@@ -383,9 +386,9 @@
                     \tuplet 3/2 { g32^2^( a g) }
                     s4 |
                 % --- 6
-                    s4 g'8.^>-1 ^( fis16-2 ) |
+                    s2 |
                 % --- 7
-                    d4-5 ( c-5 |
+                    d'4-5 ( c-5 |
                 % --- 8
                     bes8-5 ) r b r |
                 % --- 9
