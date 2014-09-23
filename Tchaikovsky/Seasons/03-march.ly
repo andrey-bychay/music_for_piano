@@ -181,6 +181,29 @@
                     \tuplet 3/2 { g32 ( a g ) }
                     fis8. ( a16 ) | \break
                 % --- 32
+                    g \< ( bes d fis \! ) g8.-> ( g16 |
+                % --- 33
+                    d8 ) <g,, bes d> r <a c d> |
+                % --- 34
+                    r <bes d> r <a c d> |
+                % --- 35
+                    r g'16-. \<
+                    \tuplet 3/2 { g32 ( a g ) }
+                    fis8. ( a16 ) \! | \break
+                % --- 36
+                    g \< ( bes d fis ) g8. ( f16 ) \! |
+                % --- 37
+                    f8 ( ees ) d ( c ) |
+                % --- 38
+                    c16-. ( fis,-. g-. a-. )  bes8.-> ( a16 |
+                % --- 39
+                    g8 ) g16-.
+                    \tuplet 3/2 { g32 ( a g ) }
+                    fis8. ( a16 ) |
+                % --- 40
+                    g16 ( bes d fis ) g8.-> ( fis16 | \break
+                % --- 41
+                    d8 ) <g, bes d>16 r r8
             }
         }
         \new Voice {
