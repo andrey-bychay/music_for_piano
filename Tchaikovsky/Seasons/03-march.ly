@@ -193,17 +193,31 @@
                 % --- 36
                     g \< ( bes d fis ) g8. ( f16 ) \! |
                 % --- 37
+                \voiceOne
                     f8 ( ees ) d ( c ) |
                 % --- 38
-                    c16-. ( fis,-. g-. a-. )  bes8.-> ( a16 |
+                    c16-. ( fis,-. \> g-. a-. )  bes8.-> ( a16 \! |
                 % --- 39
-                    g8 ) g16-.
+                    g8 )
+                \oneVoice
+                    g16-.
                     \tuplet 3/2 { g32 ( a g ) }
                     fis8. ( a16 ) |
                 % --- 40
                     g16 ( bes d fis ) g8.-> ( fis16 | \break
                 % --- 41
-                    d8 ) <g, bes d>16 r r8
+                    d8 ) <g,, bes d>16 \pp r r8 <a c d>16 r |
+                % --- 42
+                    r8 <g bes d>16 r r8 <a c d>16 r |
+                % --- 43
+                    r8 <bes d>16 r r8 <a c d>16 r |
+                % --- 44
+                    r8 <bes d>16 r r8 <a c d>16 r |
+                % --- 45
+                    r8 <g bes d>4 \> <g bes d>8 ~ |
+                % --- 46
+                    <g bes d> <g bes d>4 <g bes d>8 \!
+                \bar "||"
             }
         }
         \new Voice {
@@ -221,6 +235,14 @@
                     s2 | s | s | s | s | s | s | s | s | s | s |
                 % --- 23
                     r16 a ~ a8 s4 |
+                % --- 24..36
+                    s2 | s | s | s | s | s | s | s | s | s | s | s | s |
+                % --- 37
+                    r8 <g' c> r g |
+                % --- 38
+                    r4 <c, fis> |
+                % --- 39
+                    <bes d>8
             }
         }
     >>
@@ -302,8 +324,43 @@
                 % --- 30
                     <fis a> <fis a> |
                 % --- 31
-                    <bes d> \p <c ees> |
+                    <bes d> ( \p <c ees> |
                 % --- 32
+                    <bes d> <a c d> ) |
+                % --- 33
+                    <bes d>8 s
+                \oneVoice
+                    fis,8. ( a16 ) |
+                % --- 34
+                    g \< ( bes d fis \! ) g8.-> ( fis16 ) |
+                % --- 35
+                \voiceOne
+                    r8 <g bes d> r <fis a d> |
+                % --- 36
+                    r <g bes d> r <g b d> |
+                % --- 37
+                    r16 fis ( g c ) f!8.-> ( ees16 ) |
+                % --- 38
+                    <g, bes d>4 r8 d'8 |
+                % --- 39
+                    r8 <bes d>16 \pp r r8 <c ees>16 r |
+                % --- 40
+                    r8 <bes d>16 r16 r8 <c ees>16 r |
+                % --- 41
+                    <bes d> s8.
+                \oneVoice
+                    fis,8. ( a16 ) |
+                % --- 42
+                    g ( bes d fis ) g8.-1-> ( fis16-2 ) |
+                % --- 43
+                    <g,-5 d'-1>8 r \ppp g'8.-> ( fis16 ) |
+                % --- 44
+                    <g,-5 d'-1>8 r \ppp g'8.-> ( fis16 ) |
+                % --- 45
+                    <g, d'>2 ~ |
+                % --- 46
+                    <g d'>
+                \bar "||"
             }
         }
         \new Voice {
@@ -376,7 +433,31 @@
                 % --- 30
                     r d r d |
                 % --- 31
-                    r g4 g8 |
+                    r g4 g8 ~ |
+                % --- 32
+                    g g4 g8 ~ |
+                % --- 33
+                    g g,16-.
+                    \tuplet 3/2 { g32 ( a g ) }
+                    s4 |
+                % --- 34
+                    s2 |
+                % --- 35
+                    d'4 ( c |
+                % --- 36
+                    bes8 ) r b r |
+                % --- 37
+                    c r r <g' c> |
+                % --- 38
+                    r d ~ d4 |
+                % --- 39
+                    <g, d>8 g' ~ g4 ~ |
+                % --- 40
+                    g2 ~ |
+                % --- 41
+                    g8 g,16-.
+                    \tuplet 3/2 { g32 ( a g ) }
+                    s4 |
             }
         }
     >>
