@@ -17,6 +17,12 @@
     }
 }
 
+\paper {
+    %annotate-spacing = ##t
+    %system-count = #10
+    page-count = #2
+}
+
 \new PianoStaff <<
     \new Staff <<
         \clef "treble"
