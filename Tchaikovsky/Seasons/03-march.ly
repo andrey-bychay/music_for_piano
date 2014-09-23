@@ -23,7 +23,7 @@
         \key g \minor
         \time 2/4
         \new Voice {
-            \voiceOneStyle
+            %\voiceOneStyle
             \relative c''{
                 % --- 1
                 \oneVoice
@@ -216,7 +216,7 @@
                 % --- 45
                     r8 <g bes d>4 \> <g bes d>8 ~ |
                 % --- 46
-                    <g bes d> <g bes d>4 <g bes d>8 \!
+                    <g bes d> <g bes d>4 <g bes d>8 \fermata \!
                 \bar "||"
             }
         }
@@ -251,7 +251,7 @@
         \key g \minor
         \new Voice {
             \voiceOne
-            \voiceOneStyle
+            %\voiceOneStyle
             \override Fingering.font-size = #-7
             \dynamicUp
             \relative c' {
@@ -362,7 +362,7 @@
                 % --- 45
                     <g, d'>2 ~ |
                 % --- 46
-                    <g d'>
+                    <g d'> _\fermata
                 \bar "||"
             }
         }
@@ -441,7 +441,7 @@
                     g g4 g8 ~ |
                 % --- 33
                     g g,16-.
-                    \tuplet 3/2 { g32 ( a g ) }
+                    \tuplet 3/2 { g32 ^( a g ) }
                     s4 |
                 % --- 34
                     s2 |
@@ -459,7 +459,7 @@
                     g2 ~ |
                 % --- 41
                     g8 g,16-.
-                    \tuplet 3/2 { g32 ( a g ) }
+                    \tuplet 3/2 { g32 ^( a g ) }
                     s4 |
             }
         }
