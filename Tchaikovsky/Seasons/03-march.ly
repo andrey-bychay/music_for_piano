@@ -72,7 +72,7 @@
                     g ( bes d fis ) g8.->-5 ( f16-3 ) |
                 % --- 9
                 \voiceOne
-                    f8-5 ( ees ) d-3( c-2 ) |
+                    f8-5 ( ees-4 ) d-3( c-2 ) |
                 % --- 10
                     c16-.-3 ( fis,-.-2 g-.-3 a-.-4 ) bes8.->-5 ( a16
                         _\finger \markup { \concat { 4(5) } }
@@ -93,7 +93,10 @@
                     bes-.-2 cis-.-3 d-.-1 ees-.-2 f-.-1 fis-.-2 bes-.-4 a-.-3 |
                 % --- 13
                     \acciaccatura a8-2
-                    c8. ( bes16 )
+                    c8.
+                    \finger \markup { \concat { 4(5) } }
+                    ( bes16 )
+                    \finger \markup { \concat { 3(4) } }
                     \acciaccatura bes8-3
                     d16-.-5 a-.-2
                     \acciaccatura bes8-3
@@ -139,7 +142,7 @@
                     \acciaccatura a8
                     d16 \> d,8 ( g16 )
                     \acciaccatura d8-3
-                    g16-5 cis,_.-2
+                    g16-.-5 cis,_.-2
                     \acciaccatura d8
                     g16_. cis,_. |
                 % --- 23
@@ -157,7 +160,7 @@
                     \tuplet 3/2 { g64
                         \finger \markup { \concat { 3(2) } }
                         ( a-4 g-3 ) }
-                    fis16.-2 ( g32-1 ) \! |
+                    fis16.-2 [ ( g32-1 ) ] \! |
                 % --- 25
                     d'16-5 \> d,8
                         \finger \markup \tied-lyric #"1~5"
@@ -169,11 +172,11 @@
                     \tuplet 3/2 { g64 ( a g ) ] }
                     fis16. ( g32 ) \! | \break
                 % --- 27
-                    d'16-5 \> d,8 ( d,16 ) \! r g32-.
+                    d'16 \< d,8 ( d,16 ) r g'32-.
                     \tuplet 3/2 { g64 ( a g ) }
-                    fis16. ( g32 ) |
+                    fis16. [ ( g32 ] ) \! |
                 % --- 28
-                    d''16-5 d,8 ( d,16 ) r cis'8 ( cis,16 ) |
+                    d'16 d,8 ( d,16 ) r cis'8 ( cis,16 ) |
                 % --- 29
                     r
                     ^\markup { \bold { poco ritenuto } }
@@ -187,7 +190,7 @@
                     \tuplet 3/2 { g32 ( a g ) }
                     fis8. ( a16 ) | \break
                 % --- 32
-                    g \< ( bes d fis \! ) g8.-> ( g16 |
+                    g \< ( bes d fis \! ) g8.-> ( fis16 |
                 % --- 33
                     d8 ) <g,, bes d> r <a c d> |
                 % --- 34
@@ -320,7 +323,7 @@
                 % --- 24
                     <a-2 c!-1> <bes-2 d-1> |
                 % --- 25
-                    <a-2 c-1> <g-2 bes-1> |
+                    <a-2 c-1> <g-3 bes-2> |
                 % --- 26
                     <a c!> <bes d> |
                 % --- 27
@@ -341,7 +344,7 @@
                 \oneVoice
                     fis,8. ( a16 ) |
                 % --- 34
-                    g \< ( bes d fis \! ) g8.-> ( fis16 ) |
+                    g _\< ( bes d fis \! ) g8.-> ( fis16 ) |
                 % --- 35
                 \voiceOne
                     r8 <g bes d> r <fis a d> |
@@ -364,7 +367,7 @@
                 % --- 43
                     <g,-5 d'-1>8 r \ppp g'8.-> ( fis16 ) |
                 % --- 44
-                    <g,-5 d'-1>8 r \ppp g'8.-> ( fis16 ) |
+                    <g, d'>8 r g'8.-> ( fis16 ) |
                 % --- 45
                     <g, d'>2 ~ |
                 % --- 46
@@ -460,7 +463,7 @@
                 % --- 38
                     r d ~ d4 |
                 % --- 39
-                    <g, d>8 g' ~ g4 ~ |
+                    <g, d'>8 g' ~ g4 ~ |
                 % --- 40
                     g2 ~ |
                 % --- 41

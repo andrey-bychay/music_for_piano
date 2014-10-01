@@ -1,3 +1,5 @@
 *.ly~
 .DS_Store
+.idea
+*.iml
 
