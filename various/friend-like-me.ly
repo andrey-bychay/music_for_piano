@@ -19,6 +19,8 @@
         \relative c'{
             <aes d f>4. <g cis e>8 r4 <g cis e>4 |
         }
+
+        %%% 5 %%%
         \relative c''{
             <d f a>8 <a d f>4 <<{ d8 ~ d2 } \\ { <f, a>8 ~ <f a>4 <f a>4 }>> |
         }
@@ -28,11 +30,14 @@
         \relative c'{
             <aes d f>8 bes d f a,! <g cis e>4. |
             <f a d>4 r r8. f16 g8 gis |
-            <<{ a4 bes4 b cis } \\ { g!1 }>> | 
+            <<{ a4 bes4 b cis } \\ { g!1 }>> |
+
+            %%% 10 %%%
             <f a d>8 <a d f>4 <f a>8 r f g gis |
             <<{a8 a bes bes <g b> cis4 d8_~ | d8 <f a>_( <e g>4_.) } \\ { g,!1 | }>>
             <d' f>8-. f,( g gis) |
             <<{ a8 bes4. b4 cis } \\ { g!1 }>> |
+            d8 e4
         }
  
     }
