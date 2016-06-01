@@ -21,11 +21,13 @@
             <<{ a4 bes4 b cis } \\ { g!1 }>> | 
             % --- 10 ----
             <f a d>8 <a d f>4 <f a>8 r f g gis |
-            <<{a8 a bes bes <g b> cis4 d8_~ | d8 <f a>_( <e g>4_.) } \\ { g,!1 | }>>
+            <<{a8 a bes bes <g b> cis4 d8_ ~ | d8 <f a>_( <e g>4_.) } \\ { g,!1 | }>>
             <d' f>8-. f,( g gis) |
             <<{ a8 bes4. b4 cis } \\ { g!1 }>> |
             d'8 e4 <a, d f>8 ~ <a d f> d cis d |
             % --- 15 ---
+            <<{ e } \\ { <gis d>2 } dis e e e e4 f8 ~ |
+            f2 r8 f g gis |
         }
  
     }
