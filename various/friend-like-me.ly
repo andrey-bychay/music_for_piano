@@ -40,6 +40,10 @@
             r8 f, g gis | % 16
             <<{a4 bes b cis}\\{g!1}>> | % 17
             <f a d>8 <a d f>4 <a f>8 r f g gis | % 18
+            <<{a! a bes bes b cis4 d8 ~ | d <f a>8_( <e g>4_.)}\\{g,1 |}>> % 19
+            <d' f>8-. f,( g gis) | % 20
+            <<{a4 r8 bes b4 cis}\\{g!1}>> | % 21
+            d'8 e4 <f d a>8 ~ <f d a> d d dis | % 22
         }
     }
     \new Staff {
@@ -64,6 +68,10 @@
             a b c! cis | % 16
             a r cis r | % 17
             d r f d | % 18
+            a' r cis, r | % 19
+            d r a' d, | % 20
+            a r cis r | % 21
+            d r a' r | % 22
         }
     }
 >>
