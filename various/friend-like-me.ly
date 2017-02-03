@@ -48,8 +48,12 @@
             <cis g!>4 a'8 g ~ g <f cis g>4. | % 24
             r4 d f d | % 25
             <d f aes>8 f4 <g cis,>8 ~ <g cis,> <f cis g>4. | % 26
-            d4 f <d f aes>8 f4 <<{g8 ~ | g2} % 27
-            \\{s8 <f d aes>4. <e cis g>8}>> r4 f8 f | % 28
+            d4 f <d f aes>8 f4 <<{g8 ~ | % 27
+            g2}\\{s8 <f d aes>4. <e cis g>8}>> r4 f8 f | % 28
+            c'4 <a f c> <<{g8 f4.}\\{r4 <c a>}>> % 29
+            <bes d g>8 f'4 <ces f g>8 r f <ces f g>4 | % 30
+            <c! f a>8 c' a f g <f cis g>4 <d a f>8 | % 31
+            aes'4 <g d aes>8 ~ <g d aes> <f cis g>4. | % 32
         }
     }
     \new Staff {
@@ -84,6 +88,12 @@
             bes4. a!8 r a cis4 | % 26
             d r a r | % 27
             bes4. a!8 r a, a'4 | % 28
+            f r ees r | % 29
+            d4. des8 r aes8 des4 | % 30
+            c r r8 a4. | % 31
+            d4 r8 bes' ~ bes4 a!4 | % 32
+            %d r a r | % 32
+            %bes4. a!8 r a cis4 | % 31
         }
     }
 >>
