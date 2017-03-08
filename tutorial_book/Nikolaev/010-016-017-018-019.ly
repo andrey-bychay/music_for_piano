@@ -27,27 +27,35 @@
         }
         \header {
             title="Ёлочка"
+            composer="М. КРАСЕВ"
         }
     }
 
+%    \markup {
+%        \fill-line {
+%            \hspace #1
+%            \column {}
+%            \hspace #2
+%            \column {
+%                \line { Жили у бабуси }
+%                \line { Два веселых гуся - }
+%            }
+%            \hspace #3
+%            \column {
+%                \line { Один серый, другой белый }
+%                \line { Два веселых гуся. }
+%            }
+%            \hspace #4
+%            \column {}
+%        }
+%    }
     \score {
-        \markup {
-            \fill-line {
-               \center-column {
-                    \null
-                    \line { Жили у бабуси }
-                    \line { Два веселых гуся - }
-                    \line { Один серый, другой белый }
-                    \line { Два веселых гуся. }
-                    \null
-                }
-            }
-        }
         \new PianoStaff <<
             \new Staff {
                 \key c \major
                 \time 4/4
                 \relative {
+                    \mark "Оживлённо"
                     r1 |
                     g'2-3 g |
                     r1 |
@@ -123,24 +131,31 @@
 
     }
 
+%    \markup {
+%        \fill-line {
+%            \hspace #1
+%            \column {}
+%            \hspace #2
+%            \column {
+%                \line { А кто у нас умный? }
+%                \line { Кто у нас разумный? }
+%            }
+%            \hspace #3
+%            \column {
+%                \line { Ваня у нас умный, }
+%                \line { Михайлыч разумный. }
+%            }
+%            \hspace #4
+%            \column {}
+%        }
+%    }
     \score {
-        \markup {
-            \fill-line {
-               \center-column {
-                    \null
-                    \line { А кто у нас умный? }
-                    \line { Кто у нас разумный? }
-                    \line { Ваня у нас умный, }
-                    \line { Михайлыч разумный. }
-                    \null
-                }
-            }
-        }
         \new PianoStaff <<
             \new Staff {
                 \key g \major
                 \time 4/4
                 \relative {
+                    \mark "Умеренно"
                     g'4-1 b-3 c a |
                     b2-3 g |
                     g4-1 b-3 c a |
