@@ -26,29 +26,11 @@
             }
         }
         \header {
-            title="Ёлочка"
-            composer="М. КРАСЕВ"
+            title = "Ёлочка"
+            composer = "М. КРАСЕВ"
         }
     }
 
-%    \markup {
-%        \fill-line {
-%            \hspace #1
-%            \column {}
-%            \hspace #2
-%            \column {
-%                \line { Жили у бабуси }
-%                \line { Два веселых гуся - }
-%            }
-%            \hspace #3
-%            \column {
-%                \line { Один серый, другой белый }
-%                \line { Два веселых гуся. }
-%            }
-%            \hspace #4
-%            \column {}
-%        }
-%    }
     \score {
         \new PianoStaff <<
             \new Staff {
@@ -86,8 +68,19 @@
             }
         >>
         \header {
-            title="Весёлые гуси"
-            subtitle="Русская народная песня"
+            title = "Весёлые гуси"
+            subtitle = "Русская народная песня"
+	    subsubtitle = \markup {
+		    \column {
+		        \line { Жили у бабуси }
+			\line { Два веселых гуся - }
+		    }
+		    \hspace #4
+		    \column {
+		        \line { Один серый, другой белый }
+			\line { Два веселых гуся. }
+		    }
+	    }
         }
     }
 
@@ -125,30 +118,12 @@
             }
         >>
         \header {
-            title="Во саду ли, в огороде"
-            subtitle="Русская народная песня"
+            title = "Во саду ли, в огороде"
+            subtitle = "Русская народная песня"
         }
 
     }
 
-%    \markup {
-%        \fill-line {
-%            \hspace #1
-%            \column {}
-%            \hspace #2
-%            \column {
-%                \line { А кто у нас умный? }
-%                \line { Кто у нас разумный? }
-%            }
-%            \hspace #3
-%            \column {
-%                \line { Ваня у нас умный, }
-%                \line { Михайлыч разумный. }
-%            }
-%            \hspace #4
-%            \column {}
-%        }
-%    }
     \score {
         \new PianoStaff <<
             \new Staff {
@@ -182,7 +157,19 @@
             }
         >>
         \header {
-            title="А кто у нас умный?"
+            title = "А кто у нас умный?"
+	    composer = "Ан. АЛЕКСАНДРОВ"
+	    subsubtitle = \markup {
+	        \column {
+		    \line { А кто у нас умный? }
+		    \line { Кто у нас разумный? }
+		}
+		\hspace #4
+		\column {
+                    \line { Ваня у нас умный, }
+		    \line { Михайлыч разумный. }
+                }
+	    }
         }
     }
 }
