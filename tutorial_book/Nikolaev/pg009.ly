@@ -48,7 +48,6 @@
                         r1 |
                         r
                     }
-                    \bar "||"
                 }
             }
             \new Staff {
@@ -60,10 +59,9 @@
                     \repeat volta 2 {
                         r1 |
                         r |
-                        d4_3 e_2 f_1 e_3 |
+                        d4_3 e_2 f_1 d_3 |
                         c2_4 c
                     }
-                    \bar "||"
                 }
             }
         >>
@@ -93,7 +91,7 @@
                     f'8 f e e |
                     d d d e |
                     f f e e |
-                    e4 d |
+                    d4 d |
                     r2 |
                     r |
                     r |
