@@ -18,7 +18,7 @@
                 g4 e8 e |
                 g f e d |
                 c2
-                \bar "||"
+                \bar "|."
             }
             \addlyrics {
                 Ма- лень- кой ё- лоч- ке хо- ло- дно зи мой.
@@ -68,17 +68,17 @@
         \header {
             title = "Весёлые гуси"
             subtitle = "Русская народная песня"
-	    subsubtitle = \markup {
-		    \column {
-		        \line { Жили у бабуси }
-			\line { Два веселых гуся - }
-		    }
-		    \hspace #4
-		    \column {
-		        \line { Один серый, другой белый }
-			\line { Два веселых гуся. }
-		    }
-	    }
+            subsubtitle = \markup {
+		        \column {
+                    \line { Жили у бабуси }
+                    \line { Два веселых гуся - }
+                }
+                \hspace #4
+                \column {
+                    \line { Один серый, другой белый }
+                    \line { Два веселых гуся. }
+                }
+            }
         }
     }
 
@@ -96,7 +96,7 @@
                     r |
                     r |
                     r
-                    \bar "||"
+                    \bar "|."
                 }
 
             }
@@ -111,7 +111,7 @@
                     a a a b |
                     c c b b |
                     a4 a
-                    \bar "||"
+                    \bar "|."
                 }
             }
         >>
@@ -137,7 +137,7 @@
                     r1 |
                     r1 |
                     r1
-                    \bar "||"
+                    \bar "|."
                 }
             }
             \new Staff {
@@ -150,24 +150,72 @@
                     g2_2 g |
                     a4_1 g f_3 d_5 |
                     g2_2 g
-                    \bar "||"
+                    \bar "|."
                 }
             }
         >>
         \header {
             title = "А кто у нас умный?"
-	    composer = "Ан. АЛЕКСАНДРОВ"
-	    subsubtitle = \markup {
-	        \column {
-		    \line { А кто у нас умный? }
-		    \line { Кто у нас разумный? }
-		}
-		\hspace #4
-		\column {
-                    \line { Ваня у нас умный, }
-		    \line { Михайлыч разумный. }
+            composer = "Ан. АЛЕКСАНДРОВ"
+            subsubtitle = \markup {
+                \column {
+                    \line { А кто у нас умный? }
+                    \line { Кто у нас разумный? }
                 }
-	    }
+                \hspace #4
+                \column {
+                    \line { Ваня у нас умный, }
+                    \line { Михайлыч разумный. }
+                }
+            }
+        }
+    }
+    
+    \score {
+        \new PianoStaff <<
+            \new Staff {
+                \key f \major
+                \time 4/4
+                \relative {
+                    \mark "Весело (не торопясь)"
+                    \partial 4
+                    c''4-5 |
+                    a-3 a g-2 g |
+                    f-1 f2 r4 |
+                    r1 | r | r |
+                    r2 r4 d'-5 |
+                    c bes-3 a-2 g-1 |
+                    f2.
+                    \bar "|."
+                }
+            }
+            \new Staff {
+                \relative {
+                    r4 | r1 |
+                    r2 r4 e'_3 |
+                    d_4 e f g_1 |
+                    c,2._5 f4_2 |
+                    e_3 d e f |
+                    g_1 g2_2  r4 |
+                    r1 | r2 r4
+                    \bar "|."
+                }
+            }
+        >>
+        \header {
+            title = "Весёлые путешественники"
+            composer = "М. СТАРОКАДОМСКИЙ"
+            subsubtitle = \markup {
+                \column {
+                    \line {Мы едем, едем, едем}
+                    \line {В далёкие края -}
+                }
+                \hspace #4
+                \column {
+                    \line {Хорошие соседи,}
+                    \line {Счастливые друзья.}
+                }
+            }
         }
     }
 }
